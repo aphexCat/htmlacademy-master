@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 380px;
+    min-height: 280px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background: #ecf0f1;
+}
+
+.main-menu,
+.sub-menu {
+    width: 200px;
+    margin: 0; /* можно наследовать у родителя */
+    padding: 0; /* можно наследовать у родителя */
+    list-style: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    z-index: 10;
+}
+
+.main-menu li {border-bottom: 2px solid;}
+
+.main-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu > li {
+    position: relative;
+    border-color: #2C3E50;    
+}
+
+.main-menu > li > a {background: #2980B9;}
+
+.sub-menu > li {border-color: #2ECC71;}
+
+.main-menu li:hover > a,
+.main-menu .opened > a,
+.sub-menu a {background: #1ABC9C;}
+
+.main-menu li:hover .sub-menu,
+.main-menu .opened .sub-menu {display: block;}
+
+/* можно и не вставлять, захотелось оживить сабменю */
+.sub-menu li:hover {border-color: #2980B9;}
+.sub-menu li:hover a {background: #2C3E50;}

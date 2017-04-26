@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 280px;
+  min-height: 250px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.2;
+  color: #7f8c8d;
+  background: #ecf0f1;
+}
+
+.post {
+  position: relative;
+  padding-left: 75px
+}
+
+.post-stats {
+  padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.post-stats .icon {
+  width: 15px;
+  height: 15px;
+  background: url('http://htmlacademy.ru/assets/course14/post-challenge.png') no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.post-stats .icon-comments {
+  background-position: -20px 0px;
+}
+
+.post a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.post-title {
+  font-size: 20px;
+  color: #2980b9;
+  margin-bottom: 5px;
+}
+
+.post-date,
+.post-type {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  border-bottom: 5px solid #bdc3c7;
+  width: 55px;
+  height: 55px;
+}
+
+.post-date {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 55px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.post-type {
+  top: 70px;
+  background: #7f8c8d url('http://htmlacademy.ru/assets/course14/quotes.png') no-repeat 50% 50%;
+}
+
+.post-text {
+  background: white;
+  padding: 10px 15px;
+  border-bottom: 5px solid #bdc3c7;
+  width: 165px;
+}
